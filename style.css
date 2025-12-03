@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.controlling {
+    border-radius: 15px;
+    background-color: #f1f1f1;
+    width: 80vw;
+    height: 170px;
+    margin: 30px auto;
+    padding: 20px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 9px 32px 7px rgba(60,60,60,0.84);
+}
+
+.inputs input {
+    width: 480px;
+    margin-right: 8px;
+    height: 35px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 0.5px rgb(252, 206, 0) solid;
+    color: gray;
+}
+
+.inputs button {
+    height: 49px;
+    width: 71px;
+    background-color: rgb(252, 206, 0);
+    border-radius: 5px;
+    border: none;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+}
+
+.options button {
+    height: 35px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    background-color:  rgb(252, 206, 0);
+}
+
+.options div:last-child button:last-child {
+    background-color: rgb(255, 109, 109);
+}
+
+.options div:first-child button:first-child {
+    width: 50px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    width: 20px;
+}
+
+.tasksTable {
+    border-collapse: separate;
+    border-spacing: 5px;
+    margin: 80px auto;
+}
+
+.tdStyle {
+    text-align: center;
+    height: 40px;
+    background-color: rgb(241, 239, 239);
+}
+
+.tasksTable tr th {
+    width: 19.5vw;
+    height: 20px;
+    padding: 8px;
+    background-color: rgb(185, 185, 185);
+}
+
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.alerts p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84vw;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(102, 243, 156);
+    margin: 20px auto;
+    margin-bottom: 0;
+    display: none;
+}
