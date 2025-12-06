@@ -12,32 +12,31 @@
         <div class="inputs">
             <input type="text" placeholder="Add todo ..." class="todo">
             <input type="date" name="data" id="date">
+            <button class="editButton">Edit</button>
             <button class="addButton">Add</button>
         </div>
         <div class="options">
             <div>
-                <button>All</button>
-                <button>Pending</button>
-                <button>Completed</button>
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="pending">Pending</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
             </div>
             <div>
-                <button>Delete All</button>
+                <button id="delete">Delete All</button>
             </div>
         </div>
     </div>
-    <div class="alerts">
-        <p class="clear">All tods cleared successfully!</p>
-        <p class="add">todo added successfully!</p>
-        <p class="edit">todo edited successfully!</p>
-        <p class="status">todo status changed!</p>
-    </div>
+    <div class="alerts"></div>
     <table class="tasksTable">
-        <tr class="column-name">
-            <th>Tasks</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Actions</th>
-        </tr>
+        <thead>
+            <tr class="column-name">
+                <th>Tasks</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
         <!-- <tr class="new-row">
             <td></td>
             <td></td>

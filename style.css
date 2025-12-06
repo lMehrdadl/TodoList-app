@@ -66,14 +66,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .tasksTable {
     border-collapse: separate;
-    border-spacing: 5px;
+    border-spacing: 3px;
     margin: 80px auto;
-}
-
-.tdStyle {
-    text-align: center;
-    height: 40px;
-    background-color: rgb(241, 239, 239);
+    margin-top: 10px;
 }
 
 .tasksTable tr th {
@@ -91,7 +86,7 @@ th:last-child {
     border-top-right-radius: 10px;
 }
 
-.alerts p {
+.alert-success {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +94,51 @@ th:last-child {
     height: 30px;
     border-radius: 10px;
     background-color: rgb(102, 243, 156);
-    margin: 20px auto;
-    margin-bottom: 0;
+    margin: 0px auto;
+}
+
+.alert-error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 84vw;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(255, 109, 109);
+    margin: 0px auto;
+}
+
+td {
+    background-color: rgb(241, 239, 239);
+    height: 40px;
+    text-align: center;
+}
+
+.todo-button {
+    font-size: 13px;
+    width: 50px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+}
+
+.delete-btn {
+    background-color: rgb(255, 109, 109);
+}
+
+.do-btn {
+    background-color: rgb(102, 243, 156);
+}
+
+.edit-btn {
+    background-color: rgb(252, 206, 0);    
+}
+
+.editButton { 
+    height: 49px;
+    width: 71px;
+    background-color: rgb(252, 151, 0);
+    border-radius: 5px;
+    border: none;
     display: none;
 }
